@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Inventory</string>
+    <!-- App title -->
+    <string name="app_name">Minventory</string>
+    
+    <!-- Action bar descriptions -->
+   	<string name = "action_scan">Scan</string>
+   	<string name = "action_search">Search</string>
+   	<string name = "action_data">Data</string>
+   	<string name = "action_setup">Setup</string>
+   	
+   	<!-- Activity descriptions -->
+   	<string name = "activity_home">Minventory</string>
+   	<string name = "activity_simple_management">Item</string>
+   	<string name = "activity_data">Data</string>	
+   	<string name = "activity_setup">Setup</string>
+   	
+   	
+   	<string name="graph_description">Brief demo graph of inventory</string>
 
 </resources>

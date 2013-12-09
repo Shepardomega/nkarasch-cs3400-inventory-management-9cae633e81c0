@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/tableLayout1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:weightSum="10"
+		android:baselineAligned="false" >
+
+	<TableLayout
+			android:id="@+id/tableLayout2"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:shrinkColumns="*"
+			android:stretchColumns="*"
+			android:layout_weight="2" >
+	</TableLayout>
+
+
+	<TableLayout
+			android:id="@+id/tableLayout3"
+			android:layout_width="455dp"
+			android:layout_height="match_parent"
+			android:layout_gravity="center"
+			android:layout_weight="6.01"
+			android:shrinkColumns="*"
+			android:stretchColumns="*" >
+
+		<TableRow
+				android:id="@+id/tableRow1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_horizontal" >
+
+			<TextView
+					android:id="@+id/display_item_name"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_span="6"
+					android:background="@color/google_blue"
+					android:gravity="center"
+					android:textSize="30sp"
+					android:textStyle="bold" >
+			</TextView>
+		</TableRow>
+
+
+		<TableRow
+				android:id="@+id/tableRow2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" >
+
+			<TextView
+					android:id="@+id/TextView21"
+					android:gravity="left"
+					android:text="ID:"
+					android:background="@color/google_blue"
+					android:textSize="25sp"
+					android:textStyle="bold"
+					android:typeface="serif"
+					android:paddingLeft="10dp" >
+			</TextView>
+
+			<TextView
+					android:id="@+id/display_item_public_id"
+					android:gravity="right"
+					android:text="0"
+					android:textSize="25sp"
+					android:textStyle="bold"
+					android:typeface="serif"
+					android:paddingLeft="40dp" >
+			</TextView>
+		</TableRow>
+
+		
+				<TableRow
+				android:id="@+id/tableRow3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" >
+
+			<TextView
+					android:id="@+id/TextView22"
+					android:gravity="left"
+					android:text="Supplier:"
+					android:background="@color/google_blue"
+					android:textSize="25sp"
+					android:textStyle="bold"
+					android:typeface="serif"
+					android:paddingLeft="10dp" >
+			</TextView>
+
+			<TextView
+					android:id="@+id/display_item_supplier"
+					android:gravity="right"
+					android:text="0"
+					android:textSize="25sp"
+					android:textStyle="bold"
+					android:typeface="serif"
+					android:paddingLeft="40dp" >
+			</TextView>
+		</TableRow>
+		
+
+		<TableRow
+				android:id="@+id/tableRow4"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:weightSum="10" >
+
+			<TextView
+					android:id="@+id/TextView23"
+					android:gravity="left"
+					android:text="Min Quantity:"
+					android:background="@color/google_blue"
+					android:textSize="25sp"
+					android:textStyle="bold"
+					android:paddingLeft="10dp"
+					android:typeface="serif" >
+			</TextView>
+
+			<TextView
+					android:id="@+id/display_item_min_quantity"
+					android:gravity="right"
+					android:text="0"
+					android:textSize="25sp"
+					android:textStyle="bold"
+					android:typeface="serif"
+					android:paddingLeft="40dp" >
+			</TextView>
+		</TableRow>
+
+
+		<TableRow
+				android:id="@+id/tableRow5"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+			<TextView
+					android:id="@+id/TextView24"
+					android:gravity="left"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:text="Max Quantity:"
+					android:textSize="25sp"
+					android:textStyle="bold"
+					android:typeface="serif"
+					android:paddingLeft="10dp"
+					android:background="@color/google_blue" >
+			</TextView>
+
+			<TextView
+					android:id="@+id/display_item_max_quantity"
+					android:gravity="right"
+					android:text="0"
+					android:textSize="25sp"
+					android:textStyle="bold"
+					android:typeface="serif"
+					android:paddingLeft="40dp" >
+			</TextView>    
+		</TableRow>
+
+
+		<TableRow
+				android:id="@+id/tableRow6"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+			<TextView
+					android:id="@+id/TextView25"
+					android:gravity="left"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:text="Unit:"
+					android:textSize="25sp"
+					android:textStyle="bold"
+					android:typeface="serif"
+					android:paddingLeft="10dp"
+					android:background="@color/google_blue" >
+			</TextView>
+
+			<TextView
+					android:id="@+id/display_item_unit"
+					android:gravity="right"
+					android:text="0"
+					android:textSize="25sp"
+					android:textStyle="bold"
+					android:typeface="serif"
+					android:paddingLeft="40dp" >
+			</TextView>    
+		</TableRow>    
+
+		
+		<TableRow
+				android:id="@+id/tableRow7"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+			<TextView
+					android:id="@+id/TextView26"
+					android:gravity="left"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:text="Expiration:"
+					android:textSize="25sp"
+					android:textStyle="bold"
+					android:typeface="serif"
+					android:paddingLeft="10dp"
+					android:background="@color/google_blue" >
+			</TextView>
+
+			<TextView
+					android:id="@+id/display_item_expiration"
+					android:gravity="right"
+					android:text="0"
+					android:textSize="25sp"
+					android:textStyle="bold"
+					android:typeface="serif"
+					android:paddingLeft="40dp" >
+			</TextView>    
+		</TableRow>
+
+
+		<TableRow
+				android:id="@+id/tableRow8"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+			<TextView
+					android:id="@+id/TextView27"
+					android:gravity="left"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:text="Purchase Price:"
+					android:textSize="25sp"
+					android:textStyle="bold"
+					android:typeface="serif"
+					android:paddingLeft="10dp"
+					android:background="@color/google_blue" >
+			</TextView>
+
+			<TextView
+					android:id="@+id/display_item_purchase"
+					android:gravity="right"
+					android:text="0"
+					android:textSize="25sp"
+					android:textStyle="bold"
+					android:typeface="serif"
+					android:paddingLeft="40dp" >
+			</TextView>    
+		</TableRow>
+
+
+		<TableRow
+				android:id="@+id/tableRow9"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+			<TextView
+					android:id="@+id/TextView28"
+					android:gravity="left"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:text="Sale Price:"
+					android:textSize="25sp"
+					android:textStyle="bold"
+					android:typeface="serif"
+					android:paddingLeft="10dp"
+					android:background="@color/google_blue" >
+			</TextView>
+
+			<TextView
+					android:id="@+id/display_item_sale"
+					android:gravity="right"
+					android:text="0"
+					android:textSize="25sp"
+					android:textStyle="bold"
+					android:typeface="serif"
+					android:paddingLeft="40dp" >
+			</TextView>    
+		</TableRow>
+		
+		<TableRow
+				android:id="@+id/tableRow10"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+			
+			<TextView
+					android:id="@+id/TextView29"
+					android:gravity="left"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:text="Quantity altered:"
+					android:textSize="25sp"
+					android:textStyle="bold"
+					android:typeface="serif"
+					android:paddingLeft="10dp"
+					android:background="@color/google_blue" >
+			</TextView>
+			
+			<EditText
+			    android:id="@+id/editText1"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:ems="10"
+			    android:inputType="number" >
+			    <requestFocus />
+			</EditText>
+		</TableRow>
+
+				<TableRow
+				android:id="@+id/tableRow10"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+					<Button
+					    android:id="@+id/add_quantity"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:text="Add" />
+					
+					<Button
+					    android:id="@+id/remove_quantity"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:text="Remove" />
+				    
+				</TableRow>
+
+		<TableLayout
+				android:id="@+id/tableLayout4"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:shrinkColumns="*"
+				android:stretchColumns="*"
+				android:layout_weight="2" >
+		</TableLayout>
+	</TableLayout>
+</LinearLayout>

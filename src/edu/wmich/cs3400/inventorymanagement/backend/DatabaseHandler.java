@@ -72,9 +72,7 @@ public class DatabaseHandler {
 	public static void listAllData() {
 
 		for (InventoryItem item : db.getAllInventoryItems()) {
-			Log.i(item.getName(),
-					String.valueOf(item.getId()) + " "
-							+ String.valueOf(item.getPrice()));
+
 		}
 	}
 

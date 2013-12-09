@@ -79,7 +79,7 @@ public class PDFGenerator {
 
 				Bitmap bitmap = null;
 				QRCodeEncoder qrCodeEncoder = new QRCodeEncoder(
-						String.valueOf(item.getId()), null, Contents.Type.TEXT,
+						String.valueOf(item.getHiddenId()), null, Contents.Type.TEXT,
 						BarcodeFormat.QR_CODE.toString(), 21);
 
 				try {
@@ -101,7 +101,7 @@ public class PDFGenerator {
 
 				Bitmap bitmap = null;
 				QRCodeEncoder qrCodeEncoder = new QRCodeEncoder(
-						String.valueOf(item.getId()), null, Contents.Type.TEXT,
+						String.valueOf(item.getHiddenId()), null, Contents.Type.TEXT,
 						BarcodeFormat.QR_CODE.toString(), 20);
 
 				try {
